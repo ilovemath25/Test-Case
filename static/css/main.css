@@ -1,0 +1,178 @@
+.container{
+   width: 800px;
+   margin: auto;
+   flex: 1;
+}
+@media screen and (max-width: 800px){
+   .container{width: 100%;}
+}
+.container-body{
+   height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+main{
+   background-color: #ffffff;
+   font-size: 25px;
+   font-family: sans-serif;
+   text-align: center;
+   border-radius: 20px;
+   padding: 30px 0;
+}
+.select-lang{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #cdcdcd;
+   color: #656565;
+   margin: 30px 100px 0 100px;
+   padding: 10px;
+   font-size: 18px;
+   border-radius: 10px;
+   border: 1px solid #b1b1b1;
+   cursor: pointer;
+   user-select: none;
+}
+.option{
+   position: relative;
+   margin: 0 100px;
+   height: 40px;
+   user-select: none;
+}
+.option-lang{
+   display: none;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #ebebeb;
+   border: 1px solid #cbcbcb;
+   border-radius: 10px;
+   padding: 10px 0;
+   width: 100%;
+}
+.option-lang p{
+   font-size: 20px;
+   border-radius: 10px;
+   width: 100%;
+   padding: 5px 0px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.option-lang p:hover{
+   background-color: #c8c8c8;
+}
+main button, main .but-ton{
+   margin: 0 25%;
+   width: 50%;
+   margin-bottom: 20px;
+   padding: 10px 0;
+   border: 0;
+   border-radius: 20px;
+   font-size: 15px;
+   background-color: #5fccff;
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.clear-all{
+   background-color: #ff4949;
+}
+main button:hover{background-color: #59bfee;}
+main button:active{background-color: #53afda;}
+.clear-all:hover{background-color: #e83b3b;}
+.line{
+   margin: 20px 12%;
+   width: 76%;
+   height: 1px;
+   background-image: linear-gradient(to right,#00000000,#999999,#00000000);
+}
+table{
+   width: 80%;
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   border-collapse: collapse;
+   table-layout: fixed;
+}
+table .head, table td{
+   border: 1px solid #5e5e5e;
+}
+table .head{
+   background-color: #95e1f9;
+   font-size: 20px;
+}
+table td textarea{
+   width: 100%;
+   resize: none;
+   border: none;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+table td textarea:focus {
+   outline: none;
+   border: none;
+}
+.adder{
+   font-size: 17px;
+   padding: 7px;
+   cursor: pointer;
+   background-color: #dfdfdf;
+   border: 1px solid #bebebe;
+   user-select: none;
+   transition: background-color 0.3s ease;
+}
+.adder:hover{
+   background-color: #cbcbcb;
+   border: 1px solid #aeaeae;
+}
+.adder:active{
+   background-color: #bdbdbd;
+   border: 1px solid #a5a5a5;
+}
+.upload{
+   font-size: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.input-upload{
+   margin-top: 10px;
+   font-size: 16px;
+   padding: 10px;
+   border: 1px solid #b1b1b1;
+   border-radius: 8px;
+   background-color: #f2f2f2;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.no-file-chosen{
+   margin: 0 40px 0 10px;
+}
+.file-upload{
+   display: flex;
+   align-items: center;
+}
+.choose-file{
+   padding: 5px 10px;
+   border: 1px solid #b1b1b1;
+   border-radius: 8px;
+   background-color: #f2f2f2;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.choose-file:hover{background-color: #e0e0e0;}
+.input-upload:hover{background-color: #e0e0e0;}
+.introduction{
+   font-size: 16px;
+   margin: 50px;
+   text-align: left;
+}
+@media screen and (max-width: 500px){
+   .select-lang,.option-lang p{font-size: 15px;}
+   main button, .introduction{font-size: 12px;}
+   .input-upload{font-size: 13px;}
+}
